@@ -23,7 +23,7 @@ export const Footer = () => {
                 <a href="https://www.instagram.com/delgadofefe/"><img src={navIcon3} alt="Instagram" /></a>
                 <a href="https://github.com/FedericoDelgado"><img src={navIcon4} alt="GitHub" /></a>
               </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2023. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

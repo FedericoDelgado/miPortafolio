@@ -1,3 +1,4 @@
+import { useState } from "react";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
@@ -6,9 +7,26 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import Modal from "./Modal";
 
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Skills = () => {
+
+    const [alertImage, setAlertImage] = useState("");
+    const [showModal, setShowModal] = useState(false); // Agregamos el estado para el modal
+  
+    const handleButtonClick = (image) => {
+      setAlertImage(image);
+      setShowModal(true); // Mostramos el modal cuando se hace clic en el botón
+    };
+  
+    const handleModalClose = () => {
+      setAlertImage("");
+      setShowModal(false); // Ocultamos el modal cuando se hace clic en el botón de cierre
+    };
+
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -39,28 +57,28 @@ export const Skills = () => {
                         <p>Alguno de los principales lenguajes que manejo.<br></br> Sin implementar los framework de cada uno.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Html y Css</h5>
+                                <div><img src={meter1} alt="Image" /></div>
+                                <button onClick={() => handleButtonClick(meter1)} className="skill-button">Html y Css</button>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>JavaScript</h5>
+                            <div><img src={meter2} alt="Image" /></div>
+                            <button onClick={() => handleButtonClick(meter1)} className="skill-button">Html y Css</button>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>React</h5>
+                            <div><img src={meter3} alt="Image" /></div>
+                            <button onClick={() => handleButtonClick(meter1)} className="skill-button">Html y Css</button>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Node js</h5>
+                            <div><img src={meter1} alt="Image" /></div>
+                            <button onClick={() => handleButtonClick(meter1)} className="skill-button">Html y Css</button>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Windows</h5>
+                            <div><img src={meter2} alt="Image" /></div>
+                            <button onClick={() => handleButtonClick(meter1)} className="skill-button">Html y Css</button>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>GitHub</h5>
+                            <div><img src={meter3} alt="Image" /></div>
+                            <button onClick={() => handleButtonClick(meter1)} className="skill-button">Html y Css</button>
                             </div>    
                         </Carousel>
                     </div>
@@ -68,6 +86,12 @@ export const Skills = () => {
             </div>
         </div>
         <img className="background-image-left" src={colorSharp} alt="Image" />
+        {showModal && (
+  <Modal show={showModal} handleClose={handleModalClose}>
+    <img src={alertImage} alt="alert" />
+  </Modal>
+)}
     </section>
+    
   )
 }

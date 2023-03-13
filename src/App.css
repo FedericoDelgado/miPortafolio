@@ -339,6 +339,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.skill-button {
+  background-color: rgba(173, 78, 135, 0.5);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-button:hover {
+  background-color: rgba(74, 47, 189, 0.5);
+}
+
+.alert {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.alert img {
+  max-height: 80vh;
+  max-width: 80vw;
+  object-fit: contain;
+  cursor: pointer;
+}
 
 /************ Projects Css ************/
 .project {
