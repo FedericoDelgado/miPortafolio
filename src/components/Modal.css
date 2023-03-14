@@ -1,0 +1,52 @@
+.modal-dialog {
+    max-width: 800px;
+    margin: auto;
+    margin-block-start: 30px;
+  }
+  
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 800px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .modal-dialog {
+      max-width: 800px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .modal-dialog {
+      max-width: 800px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .modal-dialog {
+      max-width: 800px;
+    }
+  }
+
+.skill-button {
+    background-color: rgba(173, 78, 135, 0.5) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    padding: 10px 20px !important;
+    transition: background-color 0.3s ease !important;
+  }
+  
+  .skill-button:hover {
+    background-color: rgba(74, 47, 189, 0.5) !important;
+  }
+
+  .modal-content {
+    border: none;
+    box-shadow: none;
+    height: auto;
+    
+  }

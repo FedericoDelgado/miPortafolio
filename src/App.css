@@ -340,19 +340,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 .skill-button {
-  background-color: rgba(173, 78, 135, 0.5);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
+  background-color: rgba(173, 78, 135, 0.5) !important;
+  border: none !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  margin-top: 10px !important;
+  padding: 10px 20px !important;
+  transition: background-color 0.3s ease !important;
 }
 
 .skill-button:hover {
-  background-color: rgba(74, 47, 189, 0.5);
+  background-color: rgba(74, 47, 189, 0.5) !important;
 }
 
 .alert {
