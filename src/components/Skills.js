@@ -63,7 +63,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Habilidades</h2>
-              <p>Alguno de los principales lenguajes que manejo.<br></br> Sin implementar los framework de cada uno.</p>
+              <p>¡Hola! En este slider puedes encontrar una muestra de los estudios que he realizado.<br></br> Algunos de los principales lenguajes que manejo están incluidos en estos certificados. ¡Echa un vistazo!</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <div><img src={meter1} alt="Image" /></div>
